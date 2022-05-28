@@ -1,23 +1,19 @@
-<div class="header">
-  <div class="header__logo">
-    <a href="/"><img class="logo" src="/images/logo.png" alt="logo"></a>
+<section class="landing">
+  <div class="main-head">
+    <nav>
+      <a href="/"><img id="logo" src="/images/logo.png" alt="logo"></a>
+          <ul class="nav-links">
+            <li><a href="/">Úvod</a></li>
+            <li><a href="/#prehled">Přehled služeb</a></li>
+            <li><a href="/#formular">Poptávkový formulář</a></li>
+            <li><a href="/#kontakt">Kontakt</a></li>
+          </ul>
+          <div class="burger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </nav>
   </div>
-  <nav class="menu">
-    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
 
-      <label for="menu-checkbox" class="menu__togler"><strong>☰</strong></label>
-        <ul class="menu__list">
-          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}"><a href="/" class="menu__link">Úvod</a></li>
-
-          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'sluzby' }}"><a href="/sluzby/" class="menu__link">Nabídka služeb</a></li>
-
-          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kosmeceutika' }}"><a href="/kosmeceutika/" class="menu__link">Kosmeceutika</a></li>
-
-          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'fotogalerie' }}"><a href="/fotogalerie/" class="menu__link">Fotogalerie</a></li>
-
-          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'cenik' }}"><a href="/cenik/" class="menu__link">Ceník</a></li>
-
-          <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
-        </ul>
- </nav>
-</div>
+</section>

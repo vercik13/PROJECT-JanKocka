@@ -1,11 +1,10 @@
 @use 'global';
 
-
 .clanek {
   display: inline-block;
-  max-width: 300px;
+  max-width: 310px;
   width: 100%;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
   background-color: global.$c-primary;
   border-radius: 2px;
   box-shadow: 0px 5px 5px global.$c-shadow;
@@ -21,27 +20,32 @@
 
   &__description {
     font-size: 15px;
-    padding: 0.5rem;
+    padding: 1rem;
     justify-content: center;
   }
 
-  a {
-    padding: 1rem;
-    color: global.$c-third;
-  }
+}
+
+.clanek__info {
+  color: rgb(6, 154, 184);
 }
 
 @media screen and (min-width: 1040px) {
+
   .clanek {
-    display: flex;
-    flex: 1 1 auto;
-    max-width: 80%;
+    max-width: 350px;
+
+  }
+}
+
+/*
+@media screen and (min-width: 1040px) {
+  .clanek {
     margin: 1rem auto;
 
-
     &__image {
-      max-width: 250px;
+      max-width: 300px;
       width: 100%;
     }
   }
-}
+}*/

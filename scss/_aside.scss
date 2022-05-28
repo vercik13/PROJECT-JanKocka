@@ -1,35 +1,15 @@
 @use 'global';
 
 .aside {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   padding: 2rem;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 
   &__text {
     display: flex;
-  }
-
-  &__profil--photo {
-    display: flex;
-    margin: 2rem auto;
-    max-width: 15rem;
-    width: 100%;
-    border-radius: 50%;
-  }
-
-  &__button {
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: global.$c-third;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-
-  &__certificate--photo {
-    width: 80px;
-    margin: 1rem auto 1rem auto;
   }
 
   &__wrapper {
@@ -43,15 +23,14 @@
   }
 }
 
-@media screen and (min-width: 1040px) {
+/*@media screen and (min-width: 1040px) {
 
   .aside {
     margin: 0 auto;
-    max-width: 90%;
 
     &__wrapper {
       background-color: global.$c-primary;
       margin: 0 auto;
     }
   }
-}
+}*/

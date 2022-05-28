@@ -1,20 +1,21 @@
 @use 'global';
 
+
 .glide {
   height: 500px;
   box-shadow: 0px 5px 5px global.$c-shadow;
 
   &__site1 {
-    background: url("/images/salon.jpg");
+    background: url("/images/obrabeni/20211018_174801.jpg");
   }
 
   &__site2 {
-    background: url("/images/larensproduct2.png");
+    background: url("/images/obrabeni/obrabeni5.jpg");
 
   }
 
   &__site3 {
-    background: url("/images/poukazy-slider.jpg");
+    background: url("/images/svarovani/svarovani2.jpg");
   }
 
   &__site1,

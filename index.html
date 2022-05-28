@@ -2,31 +2,27 @@
 layout: layouts/sablona.njk
 ---
 
-<section class="slider">
-
-  <div class="glide">
-
+<section class="glide">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
 
         <li class="glide__slide">
           <div class="glide__site1">
-            <h2>Kosmetika Jihlava</h2>
-            <h3>Profesionální ošetření pleti</h3>
+            <h2>Zakázková výroba</h2>
           </div>
         </li>
         <li class="glide__slide">
           <div class="glide__site2">
-            <div class="glide__site2--box"><a href="/kosmeceutika/">
+            <div class="glide__site2--box">
               <div class="glide__site2--odkaz">
-                <h2>Kosmeceutika Larens</h2>
-              </div></a>
+                <h2>Obrábění</h2>
+              </div>
             </div>
           </div>
         </li>
         <li class="glide__slide">
           <div class="glide__site3">
-            <h2>Potěšte své blízké dárkovým poukazem</h2>
+            <h2>Svařování</h2>
           </div>
         </li>
       </ul>
@@ -42,53 +38,90 @@ layout: layouts/sablona.njk
       <button class="glide__bullet" data-glide-dir="=1"></button>
       <button class="glide__bullet" data-glide-dir="=2"></button>
     </div>
-
-  </div>
-
 </section>
 
 <div class="hero">
-  <section class="about">
+  <section class="prehled" id="prehled">
     <div class="about__box">
+      <h2>Jan Kočka</h2>
       <p class="about__text">
-        Ahoj, vítám tě na svých webových stránkách a zároveň bych ti ráda řekla něco o sobě. Jmenuji se Pavlína a ráda pomáhám s problémy s pletí. Nejdříve to byl jen koníček, ale poté, co jsem se starala o pleť rodině a kamarádkám, jsem se rozhodla otevřít si svůj vlastní salón. Pracuji se Švýcarsko-polskou kosmeceutikou Larens, jejíž produkty jsou dělané z rybích peptidů a lisované za studena. Právě díky tomu mají větší účinky v boji proti příznakům stárnutí a kožních problémů.
+        Cílem naší firmy je nabídnout zákazníkovi komplexní řešení jejich projektu. Poskytujeme kompletní služby, které zahrnují všechny nezbytné úkony k finálnímu dokončení výrobku. Projekty se zákazníky řešíme od prvotních konzultací, přes vytvoření technické dokumentace až po samotnou výrobu na CNC strojích. Na přání zákazníka je možné povrch produktu upravit, např. dekorativním tryskáním kovů, nebo doplnit o nápisy či logo společnosti laserovým gravírováním. Nakonec zajistíme koncovou kompletaci, otestování a předání. Vše dle potřeb a požadavků zákazníka.
       </p>
-    </div>
-    <div class="about__profil">
-      <img class="about__profil--photo" src="/images/profil.jpg" alt="osobní foto" />
-
-      <p>Těším se na setkání s Vámi :-)</p>
-
-      <button class="about__button"><a href="/kontakt/">Kontaktujte mě</a></button>
-
-      <p class="about__certificate">Certifikace</p>
-      <img
-        class="about__certificate--photo"
-        src="/images/certificate.png"
-        alt="certifikát"
-      />
     </div>
     
   </section>
 
   <div class="aside__wrapper">
-    <h2>Novinky</h2>
     <aside class="aside">
       
       
-      {% for post in collections.aktuality | reverse | limit(3) %}
-
       <div class="clanek">
-        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
-
-        <div class="clanek__description">
-          <h2 class="clanek__name">{{ post.data.title }}</h2>
-          <p class="clanek__description">{{ post.data.perex }}</p>
-          <p><a href="{{ post.url }}">Více informací...</a></p>
-        </div>
+        <a href="/vyroba/">
+        <img class="clanek__image" src="/images/obrabeni/20220413_130747.jpg" alt="vyroba" />
+          
+            <div class="clanek__description">
+              
+              <h2 class="clanek__name">Zakázková výroba</h2>
+              <p class="clanek__description"> U projektů našich klientů často stojíme již od prvních nápadů. Naším záměrem je být co nejvíce nápomocni v realizaci. Díky individuálnímu přístupu ke klientům řešíme jejich projekt, pomáháme již se samotným prvotním technickým návrhem a stojíme při nich po celou dobu naší spolupráce. </p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
+      </div>
+    
+  
+      <div class="clanek">
+        <a href="/obrabeni/">
+        <img class="clanek__image" src="/images/obrabeni/obrabeni3.jpg" alt="obrabeni" />
+          
+            <div class="clanek__description">
+              <h2 class="clanek__name">Obrábění</h2>
+              <p class="clanek__description">Vyrábíme dílce jak pro své zakázky, tak i jako subdodávky pro naše zákazníky. Zabýváme se sériovou i kusovou výrobou především tvarově složitých dílců např. zápustek, forem, upínacích a montážních přípravků, nástrojů pro zdravotnictví, programovaných přes CAM systémy. </p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
+      </div>
+  
+      <div class="clanek">
+        <a href="/svarovani/">
+        <img class="clanek__image" src="/images/svarovani/svarovani2.jpg" alt="svarovani" />
+          
+            <div class="clanek__description">
+              <h2 class="clanek__name">Svařování</h2>
+              <p class="clanek__description">Jako u všech metod obloukového svařování se dociluje roztavení základního a přídavného materiálu hořením elektrického oblouku právě mezi základním materiálem resp. svarovou lázní a tavící se obalenou elektrodou. Během hoření oblouku se elektroda odtavuje, kov se ukládá do svarové lázně a tím dochází k vytvoření svarového spoje. </p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
       </div>
 
-      {% endfor %}
     </aside>
   </div>
+
+
+  <div class="formular" id="formular">
+    <div class="form-wrapper">
+      <header class="form-head">
+        <h3>Poptávkový formulář</h3>
+      </header>
+      <form action="https://formspree.io/f/mbjwqrar"
+      method="POST">
+        <div class="name-form">
+          <label for="name"></label>
+          <input type="text" name="name" required placeholder="Jméno" />
+        </div>
+        <div class="email-form">
+          <label for="email"></label>
+          <input type="email" required name="_replyto" placeholder="Email"/>
+        </div> 
+        <div class="text-form">
+          <label for="text"></label>
+          <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
+        </div>  
+         
+        <button value="Send" type="submit">Odeslat</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="background-img"></div>
 </div>

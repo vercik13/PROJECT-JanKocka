@@ -1,5 +1,5 @@
 @use 'global';
-
+/*
 .kontakt__title {
   padding: 2rem;
   text-align: center;
@@ -15,9 +15,7 @@
 
 .form-wrapper {
   max-height: 100vh;
-  background: url('/images/salon-background9.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(209, 159, 159);
   max-width: 300px;
   width: 100%;
   align-items: center;
@@ -66,10 +64,7 @@
 .contact {
   max-height: 90vh;
   padding: 2rem;
-  background-image: url("/images/salon-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(209, 159, 159);
   color: global.$c-primary;
 
   a {
@@ -123,4 +118,4 @@
       padding: 2rem;
     }
   }
-}
+}*/
