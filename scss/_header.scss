@@ -1,5 +1,37 @@
 @use 'global';
 
+
+/*
+ **************************************
+	HEADER
+ **************************************
+*/
+
+.header__contact {
+	padding: var(--spacer-half) var(--spacer-bigger);
+	font-size: 14px;
+	text-align: right;
+	background-color: var(--grey-100);
+	color: white;
+}
+
+.header__contact-email {
+	margin-right: var(--spacer);
+}
+
+.header__contact a {
+	color: white;
+}
+
+.header__contact a:hover,
+.header__contact a:focus {
+	color: var(--accent);
+}
+
+
+
+
+
 .main-head {
   box-shadow: 0px 10px 10px rgba(78, 78, 78, 0.5);
   z-index: 2;
@@ -27,11 +59,36 @@ nav {
 }
 
 .nav-links {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 1 0 20rem;
-  text-transform: uppercase;
+  list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
+
+.menu__item {
+  margin: 0;
+	padding: 0;
+}
+
+.menu__item:not(:last-child) {
+	border-right: 1px solid var(--grey-900);
+}
+
+
+.menu__link {
+	display: block;
+	padding: var(--spacer-half) var(--spacer);
+	font-family: var(--font-special);
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.menu__link:hover {
+	background-color: var(--accent);
+}
+
 
 /* Animations */
 

@@ -1,3 +1,40 @@
+@charset "UTF-8";
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --grey-100: hsl(0, 0%, 10%);
+  --grey-200: hsl(0, 0%, 20%);
+  --grey-300: hsl(0, 0%, 30%);
+  --grey-400: hsl(0, 0%, 40%);
+  --grey-500: hsl(0, 0%, 50%);
+  --grey-600: hsl(0, 0%, 60%);
+  --grey-700: hsl(0, 0%, 70%);
+  --grey-800: hsl(0, 0%, 80%);
+  --grey-900: hsl(0, 0%, 90%);
+  --primary: #004769;
+  --accent: rgba(201, 201, 201, 0);
+  --font-default: "Open Sans", sans-serif;
+  --font-special: "Raleway", sans-serif;
+  --spacer: 1rem;
+  --spacer-quarter: calc(var(--spacer) / 4);
+  --spacer-half: calc(var(--spacer) / 2);
+  --spacer-bigger: calc(var(--spacer) * 1.5);
+  --spacer-double: calc(var(--spacer) * 2);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-default);
+  background-color: var(--grey-900);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -364,6 +401,15 @@ h1 {
 .glide {
   height: 500px;
   box-shadow: 0px 5px 5px rgba(82, 82, 82, 0.5);
+  /*&__site2--box h2 {
+    color: rgb(43, 43, 43);
+    border: 1px solid global.$c-shadow;
+    padding: 1rem;
+    /*background: linear-gradient(#4b4b4d, #202020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+  /*background-color: rgba(222, 222, 222, 0.5);
+  }*/
 }
 .glide__site1 {
   background: url("/images/vyroba/drawingsSM.jpg");
@@ -387,18 +433,35 @@ h1 {
   align-items: center;
   text-align: center;
 }
-.glide__site2--box h2 {
-  color: rgb(43, 43, 43);
-  border: 1px solid rgba(82, 82, 82, 0.5);
-  padding: 1rem;
-  /*background: linear-gradient(#4b4b4d, #202020);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
-  background-color: rgba(222, 222, 222, 0.5);
-}
-.glide__site3 h2 {
+.glide__site1 h2, .glide__site3 h2, .glide__site2--box h2 {
   background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+/*
+ **************************************
+	HEADER
+ **************************************
+*/
+.header__contact {
+  padding: var(--spacer-half) var(--spacer-bigger);
+  font-size: 14px;
+  text-align: right;
+  background-color: var(--grey-100);
+  color: white;
+}
+
+.header__contact-email {
+  margin-right: var(--spacer);
+}
+
+.header__contact a {
+  color: white;
+}
+
+.header__contact a:hover,
+.header__contact a:focus {
+  color: var(--accent);
 }
 
 .main-head {
@@ -426,10 +489,33 @@ nav {
 }
 
 .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-evenly;
-  flex: 1 0 20rem;
-  text-transform: uppercase;
+}
+
+.menu__item {
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item:not(:last-child) {
+  border-right: 1px solid var(--grey-900);
+}
+
+.menu__link {
+  display: block;
+  padding: var(--spacer-half) var(--spacer);
+  font-family: var(--font-special);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.menu__link:hover {
+  background-color: var(--accent);
 }
 
 /* Animations */
@@ -696,6 +782,7 @@ nav {
 .con {
   list-style: 1.5;
   margin: 0 auto;
+  text-align: center;
 }
 
 .con h2 {
