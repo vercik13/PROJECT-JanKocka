@@ -1,7 +1,7 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
-
+/*
 :root {
 	--grey-100: hsl(0, 0%, 10%);
 	--grey-200: hsl(0, 0%, 20%);
@@ -24,22 +24,7 @@ html { box-sizing: border-box; }
 	--spacer-half: calc(var(--spacer) / 2);
 	--spacer-bigger: calc(var(--spacer) * 1.5);
 	--spacer-double: calc(var(--spacer) * 2);
-}
-
-body {
-	margin: 0;
-	font-family: var(--font-default);
-	background-color: var(--grey-900)
-}
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  box-sizing: inherit;
-}
+}*/
 
 $c-primary: white;
 $c-secondary: #a3a3a3;
@@ -47,6 +32,13 @@ $c-third: rgba(68, 184, 172);
 $c-shadow: rgba(82, 82, 82, 0.5);
 $c-fourth: #dddbdb;
 $c-transparent: rgba(0, 0, 0, 0.5);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: inherit;
+}
 
 html {
   scroll-behavior: smooth;
@@ -79,7 +71,7 @@ body {
   margin: 0;
   font-family: "Open sans", serif;
   animation: opening 1s ease-in-out forwards;
-  background-color: #ededed;
+  background-color: white;
 }
 
 h1 {

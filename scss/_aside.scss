@@ -3,7 +3,7 @@
 .aside {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1rem;
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -12,9 +12,6 @@
     display: flex;
   }
 
-  &__wrapper {
-    padding: 1rem 0;
-  }
 
   &__wrapper h2 {
     margin: 0;

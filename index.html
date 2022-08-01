@@ -41,7 +41,7 @@ layout: layouts/sablona.njk
 </section>
 
 <div class="hero">
-  <section class="prehled" id="prehled">
+  <section class="sluzby" id="sluzby">
     <div class="about__box">
       <h2>Jan Kočka</h2>
       <p class="about__text">
@@ -96,6 +96,37 @@ layout: layouts/sablona.njk
     </aside>
   </div>
 
+  <div class="reference" id="reference">
+    <h2>Reference</h2>
+    <p>Spokojenost našich zákazníků je pro nás opravdu důležitá, proto o naše zákazníky pečujeme po celou dobu naší spolupráce. Chápeme, že naši zákazníci potřebují řešit své zakázky za pochodu, proto jsme jim k dispozici. 
+
+      Mezi naše nejvýznamnější zákazníky patří:</p>
+      <div class="reference__box">
+        <ul>
+          <li>
+            <img src="images/ammeraal.jpg" width="200">
+            <h4>Ammeraal Beltech s.r.o.</h4>
+          </li>
+          <li>
+            <img class="ref-img" src="images/okac-logo.png " width="200">
+            <h4>Okac, s.r.o.</h4>
+          </li>
+          <li>
+            <img class="ref-img" src="images/eberhard-logo.jpg" width="200">
+            <h4>EBERHARD Automatizace s.r.o.</h4>
+          </li>
+          <li>
+            <img src="images/manaut1-logo.png" width="200">
+            <h4>MANAUT DESIGN s.r.o.</h4>
+          </li>
+          <li>
+            <img src="images/kuks_logo.jpg" width="200">
+            <h4>KUKS a.s.</h4>
+          </li>
+      </ul>
+      </div>
+    </div>
+
   <div class="background-img"></div>
 
 <div class="con__box" id="kontakt">
@@ -114,16 +145,21 @@ layout: layouts/sablona.njk
       <header class="form-head">
         <h3>Poptávkový formulář</h3>
       </header>
-      <form action="https://formspree.io/f/mbjwqrar"
+      <form action="https://formspree.io/f/xdojnzal"
+      
       method="POST">
         <div class="name-form">
           <label for="name"></label>
-          <input type="text" name="name" required placeholder="Jméno" />
+          <input type="text" name="name" required placeholder="Jméno / Firma" />
         </div>
         <div class="email-form">
           <label for="email"></label>
           <input type="email" required name="_replyto" placeholder="Email"/>
         </div> 
+        <div class="tel-form">
+          <label for="telephone"></label>
+          <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
+        </div>
         <div class="text-form">
           <label for="text"></label>
           <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
@@ -131,6 +167,7 @@ layout: layouts/sablona.njk
          
         <button value="Send" type="submit">Odeslat</button>
       </form>
+
     </div>
   </div>
 </div>

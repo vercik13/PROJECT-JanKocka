@@ -1,6 +1,5 @@
 @use 'global';
 
-
 /*
  **************************************
 	HEADER
@@ -8,15 +7,15 @@
 */
 
 .header__contact {
-	padding: var(--spacer-half) var(--spacer-bigger);
+	padding: 0.5rem 1rem;
 	font-size: 14px;
 	text-align: right;
-	background-color: var(--grey-100);
+	background-color: rgb(65, 65, 65);
 	color: white;
 }
 
 .header__contact-email {
-	margin-right: var(--spacer);
+	margin-right: 2rem;
 }
 
 .header__contact a {
@@ -25,11 +24,8 @@
 
 .header__contact a:hover,
 .header__contact a:focus {
-	color: var(--accent);
+	color: rgb(153, 110, 110);
 }
-
-
-
 
 
 .main-head {
@@ -52,17 +48,25 @@ nav {
 }
 
 #logo {
+  
   flex: 1 1 30rem;
   max-width: 15rem;
-  margin-right: 5rem;
-  margin-left: 2rem;
+
 }
 
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
 .nav-links {
   list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 4rem;
 	display: flex;
+  justify-content: flex-start;
+  
 }
 
 .menu__item {
@@ -71,14 +75,14 @@ nav {
 }
 
 .menu__item:not(:last-child) {
-	border-right: 1px solid var(--grey-900);
+	border-right: 1px solid grey;
 }
 
 
 .menu__link {
 	display: block;
-	padding: var(--spacer-half) var(--spacer);
-	font-family: var(--font-special);
+	padding: 1rem;
+	font-family: 18px;
 	font-size: 18px;
 	font-weight: bold;
 	text-decoration: none;
@@ -86,7 +90,7 @@ nav {
 }
 
 .menu__link:hover {
-	background-color: var(--accent);
+	color: rgb(153, 110, 110);
 }
 
 
