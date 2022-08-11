@@ -199,8 +199,8 @@ h1 {
 }*/
 .clanek {
   display: inline-block;
-  justify-content: space-around;
-  max-width: 400px;
+  justify-content: space-evenly;
+  max-width: 380px;
   width: 100%;
   margin: 1rem auto;
   background-color: white;
@@ -383,11 +383,12 @@ h1 {
   color: white;
 }
 
-.contact__adress {
-  margin-top: 1.5rem;
+.contact__address {
+  padding: 1rem;
 }
 
-.contact__title {
+.contact__title,
+.contact__address li {
   text-transform: uppercase;
 }
 
@@ -404,7 +405,7 @@ h1 {
   color: white;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 810px) {
   .contact {
     display: flex;
     flex: 1 1 auto;
@@ -533,29 +534,19 @@ h1 {
   --_p: 0%;
 }
 
-/* Animations */
-@-webkit-keyframes opening {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes opening {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .burger,
 .menu-check {
   display: none;
 }
 
 @media screen and (max-width: 842px) {
+  #logo {
+    flex: 1 1 30rem;
+    max-width: 10rem;
+  }
+  .menu {
+    padding: 0;
+  }
   /* Burger thing */
   .burger {
     position: relative;
@@ -597,6 +588,23 @@ h1 {
   .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
     background: white;
+  }
+  /* Animations */
+  @-webkit-keyframes opening {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes opening {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 /*
@@ -732,6 +740,12 @@ h1 {
   list-style: 1.5;
 }
 
+@media screen and (max-width: 842px) {
+  .sluzby {
+    width: 90%;
+    padding: 0;
+  }
+}
 .background-img {
   background-image: url("/images/obrabeni/obrabeni2.jpg");
   background-repeat: no-repeat;
@@ -744,7 +758,17 @@ h1 {
 }
 
 .background-img--services {
-  background-image: url("/images/obrabeni/IMG20210812181116_00.jpg");
+  background-image: url("/images/vyroba/svarovani-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+}
+
+.background-img--services2 {
+  background-image: url("/images/obrabeni/obrabeni3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -779,6 +803,12 @@ h1 {
   text-align: center;
 }
 
+@media screen and (max-width: 842px) {
+  .services__wrapper {
+    width: 90%;
+    padding: 0;
+  }
+}
 .con__box {
   max-width: 70%;
   margin: auto;
@@ -835,4 +865,11 @@ h1 {
 
 .ref-img {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 842px) {
+  .reference {
+    width: 90%;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

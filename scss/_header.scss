@@ -91,17 +91,7 @@
 }
 
 
-/* Animations */
 
-@keyframes opening {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 
 .burger,
 .menu-check {
@@ -109,6 +99,18 @@
 }
 
 @media screen and (max-width: 842px) {
+
+  #logo {
+  
+    flex: 1 1 30rem;
+    max-width: 10rem;
+  
+  }
+  .menu {
+    padding: 0;
+  }
+  
+
 
   /* Burger thing */
   .burger {
@@ -160,4 +162,16 @@
     transform: rotateZ(-45deg) translateY(-300%);
     background: white;
   }
+
+    /* Animations */
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 }

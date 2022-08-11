@@ -7,3 +7,11 @@
   text-align: center;
 }
 
+@media screen and (max-width: 842px) {
+
+  .services__wrapper {
+    width: 90%;
+    padding: 0;
+  }
+  
+  }

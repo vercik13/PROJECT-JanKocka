@@ -13,7 +13,17 @@
 
 
 .background-img--services {
-  background-image: url('/images/obrabeni/IMG20210812181116_00.jpg');
+  background-image: url('/images/vyroba/svarovani-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+}
+
+.background-img--services2 {
+  background-image: url('/images/obrabeni/obrabeni3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
