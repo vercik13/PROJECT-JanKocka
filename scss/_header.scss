@@ -7,19 +7,19 @@
 */
 
 .header__contact {
-	padding: 0.5rem 1rem;
-	font-size: 14px;
-	text-align: right;
-	background-color: rgb(65, 65, 65);
-	color: white;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  text-align: right;
+  background-color: rgb(65, 65, 65);
+  color: white;
 }
 
 .header__contact-email {
-	margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .header__contact a {
-	color: white;
+  color: white;
 }
 
 .main-head {
@@ -39,11 +39,11 @@
   padding: 4rem;
   align-items: center;
   max-height: 10vh;
-  
+
 }
 
 #logo {
-  
+
   flex: 1 1 30rem;
   max-width: 15rem;
 
@@ -51,41 +51,41 @@
 
 .nav-links {
   list-style: none;
-	margin: 0;
-	
-	display: flex;
+  margin: 0;
+
+  display: flex;
   justify-content: flex-start;
 }
 
 .menu__item {
   margin: 0;
-	padding: 0;
+  padding: 0;
 }
 
 .menu__item:not(:last-child) {
-	border-right: 1px solid grey;
+  border-right: 1px solid grey;
 }
 
 
 .menu__link {
-	display: block;
-	padding: 1rem;
-	font-family: 18px;
-	font-size: 18px;
-	font-weight: bold;
-	text-decoration: none;
-	
+  display: block;
+  padding: 1rem;
+  font-family: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+
 }
 
 .menu__link {
   color: #0000;
-  background: 
-    linear-gradient(90deg,#9c8383 50%,#000 0) 
-    var(--_p,100%)/200% no-repeat;
+  background:
+    linear-gradient(90deg, #9c8383 50%, #000 0) var(--_p, 100%)/200% no-repeat;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   transition: .4s;
 }
+
 .menu__link:hover {
   --_p: 0%;
 }
@@ -101,15 +101,20 @@
 @media screen and (max-width: 842px) {
 
   #logo {
-  
+
     flex: 1 1 30rem;
     max-width: 10rem;
-  
+
   }
+
   .menu {
     padding: 0;
   }
-  
+
+  .menu__item:not(:last-child) {
+    border-right: none;
+  }
+
 
 
   /* Burger thing */
@@ -128,9 +133,12 @@
   }
 
   .nav-links a {
+    font-size: 20px;
+    margin-top: 30px;
     color: white;
     //font-size: var(--header3);
-    text-decoration: underline;
+    text-decoration: none;
+
   }
 
   .nav-links {
@@ -163,15 +171,15 @@
     background: white;
   }
 
-    /* Animations */
+  /* Animations */
 
-@keyframes opening {
-  from {
-    opacity: 0;
-  }
+  @keyframes opening {
+    from {
+      opacity: 0;
+    }
 
-  to {
-    opacity: 1;
+    to {
+      opacity: 1;
+    }
   }
-}
 }

@@ -1,27 +1,27 @@
 .con__box {
-    max-width: 70%;
-    margin: auto;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+  max-width: 70%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .con {
-    list-style: 1.5;
-    margin: 0 auto;
-    text-align: center;
-}   
+  list-style: 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .con h2 {
-    margin: 2rem auto;
-    
+  margin: 0 auto 4rem auto;
+
 }
 
 .con__icon {
-    margin: 1rem;
-    align-items: center;
+  margin: 1rem;
+  align-items: center;
 }
 
 .icon {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
-
