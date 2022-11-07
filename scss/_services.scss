@@ -1,5 +1,14 @@
 @use 'global';
 
+.services__text--primary h1 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.services__text--primary p {
+
+  margin-bottom: 5px;
+}
 
 .services__wrapper {
   width: 70%;
@@ -13,5 +22,5 @@
     width: 90%;
     padding: 0;
   }
-  
-  }
+
+}

@@ -197,6 +197,10 @@ h1 {
     }
   }
 }*/
+.clanek__name {
+  text-transform: uppercase;
+}
+
 .clanek {
   display: inline-block;
   justify-content: space-evenly;
@@ -426,6 +430,9 @@ h1 {
   /*background-color: rgba(222, 222, 222, 0.5);
   }*/
 }
+.glide h2 {
+  text-transform: uppercase;
+}
 .glide__site1 {
   background: url("/images/vyroba/drawingsSM-copy.jpg");
 }
@@ -516,7 +523,7 @@ h1 {
 .menu__link {
   display: block;
   padding: 1rem;
-  font-family: 18px;
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -799,6 +806,15 @@ h1 {
 
 .send {
   text-align: right;
+}
+
+.services__text--primary h1 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.services__text--primary p {
+  margin-bottom: 5px;
 }
 
 .services__wrapper {
