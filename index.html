@@ -135,49 +135,53 @@ layout: layouts/sablona.njk
   <div class="background-img"></div>
 
 <div class="con__box" id="kontakt">
-  <div class="con">
-    <h2>Kontaktujte mě:</h2>
-    <h2>+420 739 175 831</h2>
-    <div class="con__icon">
-    <img class="icon" src="/images/mail.png" alt="mail" width="25"><a href="mailto:jan-kocka@seznam.cz">jan-kocka@seznam.cz</a></div>
-    <div class="con__icon">
-    <img class="icon" src="/images/pin.png" alt="mail" width="25">Na Kopci 4188/7, 586 01 Jihlava</div>
-  </div>
+  <h2 class="con__title">Kontakt</h2>
+  <div class="con__flex">
+    <div class="con">
+      <h2>+420 739 175 831</h2>
+      <div class="con__icon">
+      <img class="icon" src="/images/mail.png" alt="mail" width="25"><a href="mailto:jan-kocka@seznam.cz">jan-kocka@seznam.cz</a></div>
+      <div class="con__icon">
+      <img class="icon" src="/images/pin.png" alt="mail" width="25">Na Kopci 4188/7, 586 01 Jihlava</div>
+    </div>
 
 
-  <div class="formular" id="formular">
-    <div class="form-wrapper">
-      <header class="form-head">
-        <h2>Poptávkový formulář</h2>
-      </header>
-      <form
-      action="https://formspree.io/f/mknennwn"
-      method="POST"
-    >
-        <div class="firma-form">
-          <label for="name"></label>
-          <input type="text" name="name" required placeholder="Firma" />
-        </div>
-        <div class="name-form">
-          <label for="name"></label>
-          <input type="text" name="name" required placeholder="Jméno" />
-        </div>
-        <div class="email-form">
-          <label for="email"></label>
-          <input type="email" required name="_replyto" placeholder="Email"/>
-        </div> 
-        <div class="tel-form">
-          <label for="telephone"></label>
-          <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
-        </div>
-        <div class="text-form">
-          <label for="text"></label>
-          <textarea name="message" cols="40" rows="10" placeholder="Zpráva"></textarea> 
-        </div>  
-         
-        <button value="Send" type="submit">Odeslat</button>
-      </form>
+    <div class="formular" id="formular">
+      <div class="form-wrapper">
 
+        <form
+        action="https://formspree.io/f/mknennwn"
+        method="POST"
+      >
+      <div class="form__flex">
+            <div class="firma-form">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Firma" />
+            </div>
+            <div class="name-form">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Jméno a příjmení" />
+            </div>
+      </div>
+      <div class="form__flex">
+          <div class="email-form">
+            <label for="email"></label>
+            <input type="email" required name="_replyto" placeholder="Email"/>
+          </div> 
+          <div class="tel-form">
+            <label for="telephone"></label>
+            <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
+          </div>
+        </div>
+          <div class="text-form">
+            <label for="text"></label>
+            <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
+          </div>  
+          
+          <button value="Send" type="submit">Odeslat</button>
+        </form>
+
+      </div>
     </div>
   </div>
 </div>

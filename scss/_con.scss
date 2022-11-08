@@ -1,9 +1,15 @@
-.con__box {
-  max-width: 70%;
+.con__flex {
+  max-width: 65%;
   margin: auto;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+.con__title {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .con {
@@ -12,10 +18,6 @@
   text-align: center;
 }
 
-.con h2 {
-  margin: 0 auto 4rem auto;
-
-}
 
 .con__icon {
   margin: 1rem;
@@ -24,4 +26,11 @@
 
 .icon {
   margin: 0 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .con {
+   margin: 2rem auto;
+  }
 }

@@ -790,22 +790,39 @@ h1 {
 }
 
 .formular {
-  margin: 2rem auto;
+  margin: 1rem 2rem;
 }
 
-.form-head {
-  padding: 2rem;
+input,
+textarea {
+  font-size: 16px;
+  padding: 2px;
 }
 
+.firma-form,
 .name-form,
 .email-form,
-.text-form,
 .tel-form {
-  padding: 1rem auto;
+  padding: 2rem auto;
 }
 
-.send {
-  text-align: right;
+.text-form {
+  margin-top: 20px;
+  padding: 1rem auto;
+  margin-right: 10px;
+}
+
+.form__flex {
+  display: flex;
+  max-width: 200px;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: rgb(88, 114, 88);
+  color: white;
 }
 
 .services__text--primary h1 {
@@ -829,22 +846,24 @@ h1 {
     padding: 0;
   }
 }
-.con__box {
-  max-width: 70%;
+.con__flex {
+  max-width: 65%;
   margin: auto;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
 
+.con__title {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  text-align: center;
+}
+
 .con {
   list-style: 1.5;
   margin: 0 auto;
   text-align: center;
-}
-
-.con h2 {
-  margin: 0 auto 4rem auto;
 }
 
 .con__icon {
@@ -856,6 +875,11 @@ h1 {
   margin: 0 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .con {
+    margin: 2rem auto;
+  }
+}
 .reference {
   width: 90%;
   margin: 2rem auto;
@@ -866,6 +890,7 @@ h1 {
 
 .reference h2 {
   margin: 2rem auto 1.5rem auto;
+  text-transform: uppercase;
 }
 
 .reference__box {
