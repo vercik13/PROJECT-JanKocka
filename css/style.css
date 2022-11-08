@@ -173,7 +173,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -203,8 +203,7 @@ h1 {
 
 .clanek {
   display: inline-block;
-  justify-content: space-evenly;
-  max-width: 380px;
+  max-width: 400px;
   width: 100%;
   margin: 1rem auto;
   background-color: white;
@@ -501,7 +500,8 @@ h1 {
 
 #logo {
   flex: 1 1 30rem;
-  max-width: 15rem;
+  width: 14rem;
+  max-width: 100%;
 }
 
 .nav-links {
@@ -549,7 +549,8 @@ h1 {
 @media screen and (max-width: 842px) {
   #logo {
     flex: 1 1 30rem;
-    max-width: 10rem;
+    width: 8rem;
+    max-width: 100%;
   }
   .menu {
     padding: 0;
@@ -766,7 +767,6 @@ h1 {
   background-attachment: fixed;
   width: 100%;
   height: 300px;
-  margin-top: 5rem;
 }
 
 .background-img--services {
@@ -803,6 +803,7 @@ textarea {
 .name-form,
 .email-form,
 .tel-form {
+  margin-right: 10px;
   padding: 2rem auto;
 }
 
@@ -817,21 +818,24 @@ textarea {
   max-width: 200px;
 }
 
+.button-form {
+  text-align: end;
+  margin-top: 5px;
+}
+
 button {
-  font-size: 18px;
-  padding: 5px;
-  border-radius: 2px;
-  background-color: rgb(88, 114, 88);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 5px;
+  background-color: #04AA6D;
+  border: #04AA6D 2px solid;
+  border-radius: 10px;
   color: white;
 }
 
 .services__text--primary h1 {
   text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-.services__text--primary p {
-  margin-bottom: 5px;
+  margin: 2rem auto;
 }
 
 .services__wrapper {
@@ -889,7 +893,7 @@ button {
 }
 
 .reference h2 {
-  margin: 2rem auto 1.5rem auto;
+  margin: 2rem auto;
   text-transform: uppercase;
 }
 
