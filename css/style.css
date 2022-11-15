@@ -99,6 +99,12 @@ h1 {
 /*.container {
   display: inline-block;
 }*/
+.galery__text--primary {
+  margin: 5px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .main__photo {
   display: flex;
   max-width: 250px;
