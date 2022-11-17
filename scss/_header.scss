@@ -7,19 +7,44 @@
 */
 
 .header__contact {
-  
-  display: flex;
+
+
+
   padding: 0.5rem 1rem;
   font-size: 14px;
-  align-items: flex-end;
+  text-align: right;
   background-color: rgb(65, 65, 65);
   color: white;
 }
 
+.header__contact-box {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+}
+
+.header__contact-email {
+  margin-right: 3rem;
+}
+
+
 .header__contact-email,
 .header__contact-phone {
-  margin-right: 2rem;
-  text-align: right;
+  position: relative;
+}
+
+.header__icon {
+  margin: 0 4px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+
+@media screen and (max-width: 352px) {
+  .header__contact-email {
+    margin-right: 0;
+  }
 }
 
 .header__contact a {
@@ -36,11 +61,11 @@
 }
 
 .menu {
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 4rem 1rem;
   align-items: center;
   max-height: 10vh;
 

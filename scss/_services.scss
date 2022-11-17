@@ -2,7 +2,6 @@
 
 .services__text--primary h1 {
   text-transform: uppercase;
-
   margin: 2rem auto;
 }
 
@@ -11,10 +10,12 @@
 }
 
 .services__wrapper {
-  width: 70%;
-  margin: 2rem auto;
+  width: 75%;
+  margin: 4rem auto;
   text-align: center;
 }
+
+
 
 @media screen and (max-width: 842px) {
 

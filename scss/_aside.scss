@@ -20,14 +20,10 @@
   }
 }
 
-/*@media screen and (min-width: 1040px) {
+@media screen and (max-width: 600px) {
 
   .aside {
-    margin: 0 auto;
+    width: 90%;
 
-    &__wrapper {
-      background-color: global.$c-primary;
-      margin: 0 auto;
-    }
   }
-}*/
+}
