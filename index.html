@@ -28,10 +28,11 @@ layout: layouts/sablona.njk
       </ul>
     </div>
 
-    <div class="glide__arrows" data-glide-el="controls">
+ <!-- <div class="glide__arrows" data-glide-el="controls">
       <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
       <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
     </div>
+    -->  
 
     <div class="glide__bullets" data-glide-el="controls[nav]">
       <button class="glide__bullet" data-glide-dir="=0"></button>
@@ -40,8 +41,7 @@ layout: layouts/sablona.njk
     </div>
 </section>
 
-<div class="hero">
-  <section class="sluzby" id="sluzby">
+<section class="about" id="about">
     <div class="about__box">
       <h2>O FIRMĚ</h2>
       <p class="about__text">
@@ -49,25 +49,10 @@ layout: layouts/sablona.njk
       </p>
     </div>
     
-  </section>
+</section>
 
-  <div class="aside__wrapper">
-    <aside class="aside">
-      
-   <!--
-      <div class="clanek">
-        <a href="/vyroba/">
-          <figure><img class="clanek__image" src="/images/vyroba/drawings3.jpg" alt="vyroba" /></figure>
-          
-            <div class="clanek__description">
-              
-              <h2 class="clanek__name">Technická realizace výroby</h2>
-              <p class="clanek__description"> U projektů našich klientů často stojíme již od prvních nápadů. Naším záměrem je být co nejvíce nápomocni v realizaci. Díky individuálnímu přístupu ke klientům řešíme jejich projekt, pomáháme již se samotným prvotním technickým návrhem a stojíme při nich po celou dobu naší spolupráce. </p>
-              <p class="clanek__info">Více informací...</p>
-            </div>
-          </a>
-      </div>
-    -->   
+<section class="sluzby" id="sluzby">
+   <aside class="aside">
   
       <div class="clanek">
         <a href="/obrabeni/">
@@ -92,11 +77,10 @@ layout: layouts/sablona.njk
             </div>
           </a>
       </div>
+  </aside>
+</section>
 
-    </aside>
-  </div>
-
-  <div class="reference" id="reference">
+<section class="reference" id="reference">
     <h2>Reference</h2>
     <p>Spokojenost našich zákazníků je pro nás opravdu důležitá, proto o naše zákazníky pečujeme po celou dobu naší spolupráce. Chápeme, že naši zákazníci potřebují řešit své zakázky za pochodu, proto jsme jim k dispozici. 
 
@@ -126,11 +110,11 @@ layout: layouts/sablona.njk
           
       </ul>
       </div>
-    </div>
+</section>
 
-  <div class="background-img"></div>
+<div class="background-img"></div>
 
-<div class="con__box" id="kontakt">
+<section class="con__box" id="kontakt">
   <h2 class="con__title">Kontakt</h2>
   <div class="con__flex">
     <div class="con">
@@ -150,13 +134,10 @@ layout: layouts/sablona.njk
         method="POST"
       >
       <div class="form__flex">
-            <div class="firma-form">
-              <label for="name"></label>
-              <input type="text" name="name" required placeholder="Firma" />
-            </div>
+           
             <div class="name-form">
               <label for="name"></label>
-              <input type="text" name="name" required placeholder="Jméno a příjmení" />
+              <input type="text" name="name" required placeholder="Jméno" />
             </div>
       </div>
       <div class="form__flex">
@@ -171,17 +152,16 @@ layout: layouts/sablona.njk
         </div>
           <div class="text-form">
             <label for="text"></label>
-            <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
+            <textarea name="message" placeholder="Zpráva"></textarea> 
           </div>  
         <div class="button-form">
-          <button class="button" value="Send" type="submit">Odeslat</button>
+        <!--  <button class="button" value="Send" type="submit">Odeslat</button>
+           HTML !-->
+<button class="button-48" role="button"><span class="text">Odeslat</span></button>
         </div>
         </form>
 
       </div>
     </div>
   </div>
-</div>
-
-  
-</div>
+</section>

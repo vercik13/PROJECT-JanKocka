@@ -7,9 +7,6 @@
 */
 
 .header__contact {
-
-
-
   padding: 0.5rem 1rem;
   font-size: 14px;
   text-align: right;
@@ -21,7 +18,6 @@
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-
 }
 
 .header__contact-email {
@@ -72,7 +68,9 @@
 }
 
 #logo {
-
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
   flex: 1 1 30rem;
   width: 14rem;
   max-width: 100%;

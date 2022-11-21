@@ -1,32 +1,41 @@
 @use 'global';
 
 
-.contact {
+.footer {
   padding: 2rem;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(107, 107, 107);
   color: white;
 }
 
-.contact a {
+.footer a {
   color: white;
 }
 
-.contact__address {
-
+.footer__address {
   padding: 1rem;
 }
 
-.contact__title,
-.contact__address li {
+.footer__title,
+.footer__address li {
   text-transform: uppercase;
-
 }
 
-.contact__map {
+.footer__contact {
+  margin-left: 23px;
+  position: relative;
+}
+
+.footer__icon {
+  margin: 0 4px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+
+.footer__map {
   margin-top: 1rem;
   width: 100%;
   height: 400px;
-
 }
 
 .footer__copyright {
@@ -38,11 +47,10 @@
 
 @media screen and (min-width: 810px) {
 
-  .contact {
+  .footer {
     display: flex;
     flex: 1 1 auto;
     justify-content: space-around;
     padding: 3rem;
-
   }
 }

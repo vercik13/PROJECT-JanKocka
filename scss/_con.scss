@@ -1,6 +1,6 @@
 .con__flex {
-  max-width: 65%;
-  margin: auto;
+  
+  margin: auto 2rem auto 15rem;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -28,9 +28,9 @@
   margin: 0 1rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1060px) {
 
-  .con {
+  .con__flex {
     margin: 2rem auto;
   }
 }
